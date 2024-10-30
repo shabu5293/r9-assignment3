@@ -4,9 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment-3</title>
+
+    <!-- Font-awesome-link -->
+    <script src="https://kit.fontawesome.com/a08c92b5a7.js" crossorigin="anonymous"></script>
+
+    <!-- Google-font-link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind and Daisy Ui cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+<style>
+    .font-family {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primary: '#ABEF5F',
+            secondary: '#737373',
+            accent: '#F7F7F8',
+            secondBg: '#F3F8FF',
+  
+          },
+          backgroundImage: {
+                          'bg-image': "url('assets/bg.jpg')",
+         },
+        }
+      }
+    }
+  </script>
 <body>
+    <!-- Header-section -->
+  <header class="bg-secondBg ">
+    <nav class="container mx-auto">
+      <div class="navbar">
+        <div class="navbar-start">
+         
+          <div class="flex items-center gap-2">
+            <span class="bg-primary px-2 py-1 rounded-full"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></span>
+            <a class="font-bold text-2xl">Rinterio</a>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-semibold text-lg text-secondary ">
+            <li class="rounded-md hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"><a>Home</a></li>
+            <li class="rounded-md hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"><a>Services</a></li>
+            <li class="rounded-md hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
+            <li class="rounded-md hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
+            <li class="rounded-md hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"><a>Contacts Us</a></li>
+          </ul>
+        </div> 
+        <div class="navbar-end">
+          <div class="flex items-center gap-4">
+            <div class=" hidden sm:block">
+             <span class="flex items-center gap-3 text-secondary">
+              <i class="fa-solid fa-magnifying-glass bg-white p-3 rounded-full hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out "></i>
+              <i class="fa-solid fa-cart-shopping  bg-white p-3 rounded-full hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out "></i>
+             </span>
+            </div>
+            <button class=" hidden sm:block">
+             <span class="flex items-center gap-3">
+              <a class=" bg-primary   rounded-full lg:px-5 py-2 font-semibold btn ">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 bg-black p-2 text-secondary rounded-full"></i>
+              </a>
+             </span>
+              
+            </button>
+          </div>
+          <div class="dropdown ml-3">
+            <div tabindex="0" role="button" class="lg:hidden">
+              <i class="fa-solid fa-bars bg-white p-3  rounded-full"></i>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5 font-semibold text-lg">
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"  ><a>Home</a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out" ><a>Services</a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out" ><a>Portfolio</a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out" ><a>Blogs</a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out" ><a>Contacts Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+
+
+    <!-- banner-section -->
+     <section class="mt-8">
+      <!-- banner-image -->
+      <div class="flex justify-center items-center sm:p-0 p-7">
+        <img src="./assets/banner.png" alt="">
+      </div>
+      <!-- banner-text -->
+       <div class="lg:w-8/12 md:w-11/12 mx-auto text-center sm:mt-8 sm:p-0 p-5">
+        <h1 class="lg:text-6xl md:text-5xl text-4xl font-bold leading-tight mb-6">A barn house of this design has a striking appearance</h1>
+        <p class="text-[#494949] mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <div class="">
+          <button class="btn mb-14 w-full md:w-[25%] lg:w-[18%] bg-primary rounded-full ">View Details 
+            <i class="fa-solid fa-arrow-right-long -rotate-45 bg-[#8dee1e] p-2 text-secondary rounded-full"></i>
+          </button>
+        </div>
+       </div>
+     </section>
+     </nav>
+  </header>
+
     
 </body>
 </html>
